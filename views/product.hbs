@@ -3,9 +3,13 @@
 </p>
 
 <h1 class="section__heading">Это страница одного продукта</h1>
-<img class="product__image" src="{{product.image}}" alt="">
-<h2 class="product__name">{{product.name}}</h2>
-<p class="product__price">Цена: {{price}} кредитов</p>
-<button type="button" class="button product__button" aria-label="В корзину">
-  <span class="button__icon"></span>
-</button>
+<li class="grid__item">
+  <article class="product">
+    <img class="product__image" src="{{product.image}}" alt="{{product.name}}" />
+    <h2 class="product__name">{{product.name}}</h2>
+    <p class="product__price">Цена: {{product.price}} кредитов</p>
+    <button type="button" class="button product__button" aria-label="В корзину">
+      <span class="button__icon"></span>
+    </button>
+  </article>
+</li>

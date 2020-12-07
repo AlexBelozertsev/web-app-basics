@@ -15,4 +15,4 @@
   BackEnd)
 - },
 - =========================================================================================================== -
-- in bash-terminal:> git push heroku main:master
+- in bash-terminal:> git push heroku master
