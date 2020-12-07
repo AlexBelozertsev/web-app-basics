@@ -2,8 +2,7 @@ const express = require('express'); //подключение пакета expres
 const exhbs = require('express-handlebars'); //подключение библиотеки handlebars
 const products = require('./products.json'); //подключение database
 
-const PORT = process.env.PORT || 4444;
-
+const PORT = process.env.PORT || 4444; // process - global var in Node. env.PORT - переменная для порта генерируемого heroku. 4444 - для локального запуска
 const app = express(); //вызов функции express() возвращает объект app методами которого создается web-server
 
 app.use(express.static('public')); //регистрация настройки раздачи стат.ресурсов(img,css,js) прослойка, пропускает запрос через адрес ('public'), что позволяет appserver видеть(обрабатывать)ресурсы
