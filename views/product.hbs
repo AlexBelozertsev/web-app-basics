@@ -2,6 +2,10 @@
   <a href="/products">Обратно к товарам</a>
 </p>
 
-<h1>Это страница одного продукта</h1>
-<img src="{{product.image}}" alt="">
-<h2>{{product.name}}</h2>
+<h1 class="section__heading">Это страница одного продукта</h1>
+<img class="product__image" src="{{product.image}}" alt="">
+<h2 class="product__name">{{product.name}}</h2>
+<p class="product__price">Цена: {{price}} кредитов</p>
+<button type="button" class="button product__button" aria-label="В корзину">
+  <span class="button__icon"></span>
+</button>

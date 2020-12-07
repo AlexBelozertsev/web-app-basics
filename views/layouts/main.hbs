@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{pageTitle}}</title>
   <link rel="stylesheet" href="stylesheets/common.css">
+  {{!-- передача css в виде параметра cssFileName для подключения на каждую страницу своих стилей --}}
   <link rel="stylesheet" href="stylesheets/{{cssFileName}}.css">
 </head>
 
 <body>
+  {{!-- синтаксис подключения partials --}}
   {{> site-nav}}
 
+  {{!-- синтаксис подключения страницы для рендеринга --}}
   {{{body}}}
 </body>
 
